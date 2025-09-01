@@ -19,9 +19,9 @@ public class URL {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     Integer ID;
 
-
+@Column(nullable = false,unique = true,columnDefinition = "TEXT")
     String mainURL;
-
+@Column(nullable = false,unique = true)
     String shortCode;
 
     Date createdAt;

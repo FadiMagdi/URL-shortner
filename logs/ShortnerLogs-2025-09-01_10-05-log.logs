@@ -1,0 +1,4 @@
+2025-09-01 10:05:00 - HikariPool-1 - Pool stats (total=10/10, idle=10/10, active=0, waiting=0)
+2025-09-01 10:05:00 - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-09-01 10:05:30 - HikariPool-1 - Pool stats (total=10/10, idle=10/10, active=0, waiting=0)
+2025-09-01 10:05:30 - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.

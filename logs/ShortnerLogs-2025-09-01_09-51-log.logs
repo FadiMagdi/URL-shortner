@@ -1,0 +1,63 @@
+2025-09-01 09:51:09 - HikariPool-1 - keepalive: connection com.mysql.cj.jdbc.ConnectionImpl@373de671 is alive
+2025-09-01 09:51:12 - HikariPool-1 - keepalive: connection com.mysql.cj.jdbc.ConnectionImpl@3d072d1a is alive
+2025-09-01 09:51:17 - HikariPool-1 - keepalive: connection com.mysql.cj.jdbc.ConnectionImpl@53d16057 is alive
+2025-09-01 09:51:21 - GET "/shorten/qmo614", parameters={}
+2025-09-01 09:51:21 - Mapped to com.FadiMagdi.URL_Shortner.URLController#getOriginalUrl(String)
+2025-09-01 09:51:21 - Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+2025-09-01 09:51:21 - Created new SQL alias : u1_0
+2025-09-01 09:51:21 - Registration of TableGroup [StandardTableGroup(com.FadiMagdi.URL_Shortner.Domain.URL(2))] with identifierForTableGroup [com.FadiMagdi.URL_Shortner.Domain.URL] for NavigablePath [com.FadiMagdi.URL_Shortner.Domain.URL] 
+2025-09-01 09:51:21 - Determining mapping-model type for SqmParameter : org.hibernate.query.sqm.tree.expression.SqmJpaCriteriaParameterWrapper@1e840d1e
+2025-09-01 09:51:21 - Determining mapping-model type for SqmPath : SqmBasicValuedSimplePath(com.FadiMagdi.URL_Shortner.Domain.URL(2).shortCode) 
+2025-09-01 09:51:21 - DomainResult Graph:
+ \-EntityResultImpl [com.FadiMagdi.URL_Shortner.Domain.URL(2)]
+ |  +-BasicFetch [com.FadiMagdi.URL_Shortner.Domain.URL(2).accessCount]
+ |  +-BasicFetch [com.FadiMagdi.URL_Shortner.Domain.URL(2).createdAt]
+ |  +-BasicFetch [com.FadiMagdi.URL_Shortner.Domain.URL(2).mainURL]
+ |  +-BasicFetch [com.FadiMagdi.URL_Shortner.Domain.URL(2).shortCode]
+ |  \-BasicFetch [com.FadiMagdi.URL_Shortner.Domain.URL(2).updatedAt]
+
+2025-09-01 09:51:21 - SQL AST Tree:
+    SelectStatement {
+      FromClause {
+        StandardTableGroup (u1 : com.FadiMagdi.URL_Shortner.Domain.URL(2)) {
+          primaryTableReference : url as u1_0
+        }
+      }
+    }
+
+2025-09-01 09:51:21 - Skipping reading Query result cache data: cache-enabled = false, cache-mode = NORMAL
+2025-09-01 09:51:21 - select u1_0.id,u1_0.access_count,u1_0.created_at,u1_0.mainurl,u1_0.short_code,u1_0.updated_at from url u1_0 where u1_0.short_code=?
+2025-09-01 09:51:21 - Initializer list:
+	  com.FadiMagdi.URL_Shortner.Domain.URL(2) -> EntityJoinedFetchInitializer(com.FadiMagdi.URL_Shortner.Domain.URL(2))@1000959973 (SingleTableEntityPersister(com.FadiMagdi.URL_Shortner.Domain.URL))
+
+2025-09-01 09:51:21 - Short code qmo614 does not exist in DB
+2025-09-01 09:51:21 - Found thread-bound EntityManager [SessionImpl(1329707191<open>)] for JPA transaction
+2025-09-01 09:51:21 - Creating new transaction with name [org.springframework.data.jpa.repository.support.SimpleJpaRepository.save]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
+2025-09-01 09:51:21 - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+2025-09-01 09:51:21 - begin
+2025-09-01 09:51:21 - Exposing JPA transaction as JDBC [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@3fe730fd]
+2025-09-01 09:51:21 - jakarta.persistence.PersistenceUnitUtil.getIdentifier is only intended to work with enhanced entities (although Hibernate also adapts this support to its proxies); however the passed entity was not enhanced (nor a proxy).. may not be able to read identifier
+2025-09-01 09:51:21 - Initiating transaction commit
+2025-09-01 09:51:21 - Committing JPA transaction on EntityManager [SessionImpl(1329707191<open>)]
+2025-09-01 09:51:21 - committing
+2025-09-01 09:51:21 - Processing flush-time cascades
+2025-09-01 09:51:21 - Dirty checking collections
+2025-09-01 09:51:21 - Flushed: 0 insertions, 1 updates, 0 deletions to 1 objects
+2025-09-01 09:51:21 - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+2025-09-01 09:51:21 - Listing entities:
+2025-09-01 09:51:21 - com.FadiMagdi.URL_Shortner.Domain.URL{accessCount=2, createdAt=2025-09-01 09:47:03.843, ID=3, mainURL={
+url:"https://www.youtube.com/shorts/yRo8W00h4s8?feature=share"
+}, shortCode=qmo614, updatedAt=null}
+2025-09-01 09:51:21 - update url set access_count=?,created_at=?,mainurl=?,short_code=?,updated_at=? where id=?
+2025-09-01 09:51:21 - Not closing pre-bound JPA EntityManager after transaction
+2025-09-01 09:51:21 - Using 'text/plain', given [*/*] and supported [text/plain, */*, application/json, application/*+json, application/yaml]
+2025-09-01 09:51:21 - Writing ["{<EOL>url:"https://www.youtube.com/shorts/yRo8W00h4s8?feature=share"<EOL>}"]
+2025-09-01 09:51:21 - Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+2025-09-01 09:51:21 - Completed 200 OK
+2025-09-01 09:51:22 - HikariPool-1 - Pool stats (total=10/10, idle=10/10, active=0, waiting=0)
+2025-09-01 09:51:22 - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-09-01 09:51:47 - HikariPool-1 - keepalive: connection com.mysql.cj.jdbc.ConnectionImpl@1261ccd7 is alive
+2025-09-01 09:51:50 - HikariPool-1 - keepalive: connection com.mysql.cj.jdbc.ConnectionImpl@6245b665 is alive
+2025-09-01 09:51:52 - HikariPool-1 - Pool stats (total=10/10, idle=10/10, active=0, waiting=0)
+2025-09-01 09:51:52 - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-09-01 09:51:56 - HikariPool-1 - keepalive: connection com.mysql.cj.jdbc.ConnectionImpl@224a8114 is alive

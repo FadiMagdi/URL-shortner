@@ -2,13 +2,14 @@ package com.FadiMagdi.URL_Shortner;
 
 import com.FadiMagdi.URL_Shortner.Domain.URL;
 import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequiredArgsConstructor
 @RequestMapping("/shorten")
-
+@Slf4j
 public class URLController {
     final UrlService urlService;
 
@@ -18,6 +19,8 @@ public class URLController {
 
 
        URL response =  this.urlService.createURL(mainURL);
+
+       log.info("URL {} shortened to {} ",mainURL,response.getShortCode());
 
 return ResponseEntity.ok(response);
     }
@@ -33,6 +36,9 @@ public ResponseEntity<?> getOriginalUrl(@PathVariable("shortCode") String shortC
     public ResponseEntity<?> updateURL(@PathVariable("shortCode") String shortCode , @RequestBody String newURL){
 
         URL updated = this.urlService.updateURL(shortCode, newURL);
+
+        log.info("ShortCode {} redirects to url {}",shortCode,newURL);
+
         return ResponseEntity.ok(updated);
 
     }

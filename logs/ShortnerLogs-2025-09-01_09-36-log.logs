@@ -1,0 +1,75 @@
+2025-09-01 09:36:17 - HikariPool-1 - Pool stats (total=10/10, idle=10/10, active=0, waiting=0)
+2025-09-01 09:36:17 - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-09-01 09:36:27 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-09-01 09:36:27 - Initializing Servlet 'dispatcherServlet'
+2025-09-01 09:36:27 - Detected StandardServletMultipartResolver
+2025-09-01 09:36:27 - Detected AcceptHeaderLocaleResolver
+2025-09-01 09:36:27 - Detected FixedThemeResolver
+2025-09-01 09:36:27 - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@774b37ac
+2025-09-01 09:36:27 - Detected org.springframework.web.servlet.support.SessionFlashMapManager@20bff9e0
+2025-09-01 09:36:27 - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-09-01 09:36:27 - Completed initialization in 5 ms
+2025-09-01 09:36:27 - GET "/swagger-ui/index.html", parameters={}
+2025-09-01 09:36:27 - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2025-09-01 09:36:27 - Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+2025-09-01 09:36:27 - Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+2025-09-01 09:36:27 - Completed 200 OK
+2025-09-01 09:36:27 - GET "/swagger-ui/swagger-ui.css", parameters={}
+2025-09-01 09:36:27 - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2025-09-01 09:36:27 - Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+2025-09-01 09:36:27 - GET "/swagger-ui/index.css", parameters={}
+2025-09-01 09:36:27 - GET "/swagger-ui/swagger-initializer.js", parameters={}
+2025-09-01 09:36:27 - GET "/swagger-ui/swagger-ui-standalone-preset.js", parameters={}
+2025-09-01 09:36:27 - GET "/swagger-ui/swagger-ui-bundle.js", parameters={}
+2025-09-01 09:36:27 - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2025-09-01 09:36:27 - Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+2025-09-01 09:36:27 - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2025-09-01 09:36:27 - Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+2025-09-01 09:36:27 - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2025-09-01 09:36:27 - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2025-09-01 09:36:27 - Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+2025-09-01 09:36:27 - Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+2025-09-01 09:36:27 - Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+2025-09-01 09:36:27 - Completed 200 OK
+2025-09-01 09:36:27 - Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+2025-09-01 09:36:27 - Completed 200 OK
+2025-09-01 09:36:27 - Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+2025-09-01 09:36:27 - Completed 200 OK
+2025-09-01 09:36:27 - Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+2025-09-01 09:36:27 - Completed 200 OK
+2025-09-01 09:36:27 - Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+2025-09-01 09:36:27 - Completed 200 OK
+2025-09-01 09:36:28 - GET "/v3/api-docs/swagger-config", parameters={}
+2025-09-01 09:36:28 - Mapped to org.springdoc.webmvc.ui.SwaggerConfigResource#openapiJson(HttpServletRequest)
+2025-09-01 09:36:28 - Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+2025-09-01 09:36:28 - GET "/swagger-ui/favicon-32x32.png", parameters={}
+2025-09-01 09:36:28 - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2025-09-01 09:36:28 - Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+2025-09-01 09:36:28 - Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+2025-09-01 09:36:28 - Completed 200 OK
+2025-09-01 09:36:28 - Using 'application/json', given [*/*] and supported [application/json]
+2025-09-01 09:36:28 - Writing [{configUrl=/v3/api-docs/swagger-config, oauth2RedirectUrl=http://localhost:8080/swagger-ui/oauth2-re (truncated)...]
+2025-09-01 09:36:28 - Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+2025-09-01 09:36:28 - Completed 200 OK
+2025-09-01 09:36:28 - GET "/v3/api-docs", parameters={}
+2025-09-01 09:36:28 - Mapped to org.springdoc.webmvc.api.OpenApiWebMvcResource#openapiJson(HttpServletRequest, String, Locale)
+2025-09-01 09:36:28 - Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+2025-09-01 09:36:28 - resolve class java.lang.String
+2025-09-01 09:36:28 - resolve class java.lang.String
+2025-09-01 09:36:28 - resolve org.springframework.http.ResponseEntity<?>
+2025-09-01 09:36:28 - resolve class java.lang.String
+2025-09-01 09:36:28 - resolve org.springframework.http.ResponseEntity<?>
+2025-09-01 09:36:28 - resolve class java.lang.String
+2025-09-01 09:36:28 - resolve org.springframework.http.ResponseEntity<?>
+2025-09-01 09:36:28 - resolve class java.lang.String
+2025-09-01 09:36:28 - resolve org.springframework.http.ResponseEntity<java.lang.Integer>
+2025-09-01 09:36:28 - resolve [simple type, class java.lang.Integer]
+2025-09-01 09:36:28 - resolve class java.lang.String
+2025-09-01 09:36:28 - resolve org.springframework.http.ResponseEntity<?>
+2025-09-01 09:36:28 - Init duration for springdoc-openapi is: 493 ms
+2025-09-01 09:36:28 - Using 'application/json', given [application/json, */*] and supported [application/json]
+2025-09-01 09:36:28 - Writing [{123, 34, 111, 112, 101, 110, 97, 112, 105, 34, 58, 34, 51, 46, 49, 46, 48, 34, 44, 34, 105, 110, 10 (truncated)...]
+2025-09-01 09:36:28 - Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+2025-09-01 09:36:28 - Completed 200 OK
+2025-09-01 09:36:47 - HikariPool-1 - Pool stats (total=10/10, idle=10/10, active=0, waiting=0)
+2025-09-01 09:36:47 - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.

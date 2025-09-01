@@ -1,0 +1,50 @@
+2025-09-01 10:40:02 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-09-01 10:40:02 - Initializing Servlet 'dispatcherServlet'
+2025-09-01 10:40:02 - Detected StandardServletMultipartResolver
+2025-09-01 10:40:02 - Detected AcceptHeaderLocaleResolver
+2025-09-01 10:40:02 - Detected FixedThemeResolver
+2025-09-01 10:40:02 - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@66585e9e
+2025-09-01 10:40:02 - Detected org.springframework.web.servlet.support.SessionFlashMapManager@6370d2af
+2025-09-01 10:40:02 - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-09-01 10:40:02 - Completed initialization in 3 ms
+2025-09-01 10:40:02 - GET "/swagger-ui/index.html", parameters={}
+2025-09-01 10:40:02 - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2025-09-01 10:40:02 - Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+2025-09-01 10:40:02 - Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+2025-09-01 10:40:02 - Completed 304 NOT_MODIFIED
+2025-09-01 10:40:02 - GET "/swagger-ui/swagger-initializer.js", parameters={}
+2025-09-01 10:40:02 - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2025-09-01 10:40:02 - Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+2025-09-01 10:40:03 - Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+2025-09-01 10:40:03 - Completed 200 OK
+2025-09-01 10:40:03 - GET "/v3/api-docs/swagger-config", parameters={}
+2025-09-01 10:40:03 - Mapped to org.springdoc.webmvc.ui.SwaggerConfigResource#openapiJson(HttpServletRequest)
+2025-09-01 10:40:03 - Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+2025-09-01 10:40:03 - Using 'application/json', given [*/*] and supported [application/json]
+2025-09-01 10:40:03 - Writing [{configUrl=/v3/api-docs/swagger-config, oauth2RedirectUrl=http://localhost:8080/swagger-ui/oauth2-re (truncated)...]
+2025-09-01 10:40:03 - Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+2025-09-01 10:40:03 - Completed 200 OK
+2025-09-01 10:40:03 - GET "/v3/api-docs", parameters={}
+2025-09-01 10:40:03 - Mapped to org.springdoc.webmvc.api.OpenApiWebMvcResource#openapiJson(HttpServletRequest, String, Locale)
+2025-09-01 10:40:03 - Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+2025-09-01 10:40:04 - resolve class java.lang.String
+2025-09-01 10:40:04 - resolve class java.lang.String
+2025-09-01 10:40:04 - resolve org.springframework.http.ResponseEntity<?>
+2025-09-01 10:40:04 - resolve class java.lang.String
+2025-09-01 10:40:04 - resolve org.springframework.http.ResponseEntity<?>
+2025-09-01 10:40:04 - resolve class java.lang.String
+2025-09-01 10:40:04 - resolve org.springframework.http.ResponseEntity<?>
+2025-09-01 10:40:04 - resolve class java.lang.String
+2025-09-01 10:40:04 - resolve org.springframework.http.ResponseEntity<java.lang.Integer>
+2025-09-01 10:40:04 - resolve [simple type, class java.lang.Integer]
+2025-09-01 10:40:04 - resolve class java.lang.String
+2025-09-01 10:40:04 - resolve org.springframework.http.ResponseEntity<?>
+2025-09-01 10:40:04 - Init duration for springdoc-openapi is: 505 ms
+2025-09-01 10:40:04 - Using 'application/json', given [application/json, */*] and supported [application/json]
+2025-09-01 10:40:04 - Writing [{123, 34, 111, 112, 101, 110, 97, 112, 105, 34, 58, 34, 51, 46, 49, 46, 48, 34, 44, 34, 105, 110, 10 (truncated)...]
+2025-09-01 10:40:04 - Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+2025-09-01 10:40:04 - Completed 200 OK
+2025-09-01 10:40:18 - HikariPool-1 - Pool stats (total=10/10, idle=10/10, active=0, waiting=0)
+2025-09-01 10:40:18 - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-09-01 10:40:48 - HikariPool-1 - Pool stats (total=10/10, idle=10/10, active=0, waiting=0)
+2025-09-01 10:40:48 - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.

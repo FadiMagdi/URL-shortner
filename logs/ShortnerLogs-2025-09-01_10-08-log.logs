@@ -1,0 +1,12 @@
+2025-09-01 10:08:00 - HikariPool-1 - Pool stats (total=10/10, idle=10/10, active=0, waiting=0)
+2025-09-01 10:08:01 - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-09-01 10:08:06 - HikariPool-1 - keepalive: connection com.mysql.cj.jdbc.ConnectionImpl@45fde55d is alive
+2025-09-01 10:08:10 - HikariPool-1 - keepalive: connection com.mysql.cj.jdbc.ConnectionImpl@51390d61 is alive
+2025-09-01 10:08:12 - HikariPool-1 - keepalive: connection com.mysql.cj.jdbc.ConnectionImpl@63ffe5da is alive
+2025-09-01 10:08:18 - HikariPool-1 - keepalive: connection com.mysql.cj.jdbc.ConnectionImpl@52e73701 is alive
+2025-09-01 10:08:21 - HikariPool-1 - keepalive: connection com.mysql.cj.jdbc.ConnectionImpl@4f51e9f6 is alive
+2025-09-01 10:08:24 - HikariPool-1 - keepalive: connection com.mysql.cj.jdbc.ConnectionImpl@40d3acf5 is alive
+2025-09-01 10:08:27 - HikariPool-1 - keepalive: connection com.mysql.cj.jdbc.ConnectionImpl@32c8c84e is alive
+2025-09-01 10:08:30 - HikariPool-1 - keepalive: connection com.mysql.cj.jdbc.ConnectionImpl@3686163f is alive
+2025-09-01 10:08:31 - HikariPool-1 - Pool stats (total=10/10, idle=10/10, active=0, waiting=0)
+2025-09-01 10:08:31 - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.

@@ -1,0 +1,50 @@
+2025-09-01 10:41:08 - HikariPool-1 - keepalive: connection com.mysql.cj.jdbc.ConnectionImpl@c02d6bc is alive
+2025-09-01 10:41:09 - POST "/shorten", parameters={}
+2025-09-01 10:41:09 - Mapped to com.FadiMagdi.URL_Shortner.URLController#getShortLink(String)
+2025-09-01 10:41:09 - Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+2025-09-01 10:41:09 - Read "application/json;charset=UTF-8" to ["{<EOL>url:"https://www.msn.com/ar-eg/sports/other/%D9%85%D9%84%D9%81-%D9%8A%D9%84%D8%A7-%D9%83%D9%88%D8% (truncated)..."]
+2025-09-01 10:41:09 - URL {
+url:"https://www.msn.com/ar-eg/sports/other/%D9%85%D9%84%D9%81-%D9%8A%D9%84%D8%A7-%D9%83%D9%88%D8%B1%D8%A9-%D8%B1%D8%AD%D9%8A%D9%84-%D8%B1%D9%8A%D8%A8%D9%8A%D8%B1%D9%88-%D9%87%D8%B2%D9%8A%D9%85%D8%A9-%D8%A7%D9%84%D8%B2%D9%85%D8%A7%D9%84%D9%83-%D9%88%D9%82%D8%A7%D8%A6%D9%85%D8%A9-%D9%85%D9%86%D8%AA%D8%AE%D8%A8-%D9%85%D8%B5%D8%B1/ar-AA1LBf8b?ocid=msedgntp&pc=U531&cvid=0cb54c032adf4afb8117d9aacb88fe41&ei=11"
+} was shortened with short Code eka178
+2025-09-01 10:41:09 - Found thread-bound EntityManager [SessionImpl(1419669678<open>)] for JPA transaction
+2025-09-01 10:41:09 - Creating new transaction with name [org.springframework.data.jpa.repository.support.SimpleJpaRepository.save]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
+2025-09-01 10:41:09 - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+2025-09-01 10:41:09 - begin
+2025-09-01 10:41:09 - Exposing JPA transaction as JDBC [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@649ff2bd]
+2025-09-01 10:41:09 - jakarta.persistence.PersistenceUnitUtil.getIdentifier is only intended to work with enhanced entities (although Hibernate also adapts this support to its proxies); however the passed entity was not enhanced (nor a proxy).. may not be able to read identifier
+2025-09-01 10:41:09 - Executing identity-insert immediately
+2025-09-01 10:41:09 - insert into url (access_count,created_at,mainurl,short_code,updated_at) values (?,?,?,?,?)
+2025-09-01 10:41:09 - Initializer list is empty
+2025-09-01 10:41:09 - Extracted generated values [com.FadiMagdi.URL_Shortner.Domain.URL]: [Ljava.lang.Object;@60915d1e
+2025-09-01 10:41:09 - Initiating transaction commit
+2025-09-01 10:41:09 - Committing JPA transaction on EntityManager [SessionImpl(1419669678<open>)]
+2025-09-01 10:41:09 - committing
+2025-09-01 10:41:09 - Processing flush-time cascades
+2025-09-01 10:41:09 - Dirty checking collections
+2025-09-01 10:41:09 - Flushed: 0 insertions, 0 updates, 0 deletions to 1 objects
+2025-09-01 10:41:09 - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+2025-09-01 10:41:09 - Listing entities:
+2025-09-01 10:41:09 - com.FadiMagdi.URL_Shortner.Domain.URL{accessCount=0, createdAt=Mon Sep 01 10:41:09 EEST 2025, ID=1, mainURL={
+url:"https://www.msn.com/ar-eg/sports/other/%D9%85%D9%84%D9%81-%D9%8A%D9%84%D8%A7-%D9%83%D9%88%D8%B1%D8%A9-%D8%B1%D8%AD%D9%8A%D9%84-%D8%B1%D9%8A%D8%A8%D9%8A%D8%B1%D9%88-%D9%87%D8%B2%D9%8A%D9%85%D8%A9-%D8%A7%D9%84%D8%B2%D9%85%D8%A7%D9%84%D9%83-%D9%88%D9%82%D8%A7%D8%A6%D9%85%D8%A9-%D9%85%D9%86%D8%AA%D8%AE%D8%A8-%D9%85%D8%B5%D8%B1/ar-AA1LBf8b?ocid=msedgntp&pc=U531&cvid=0cb54c032adf4afb8117d9aacb88fe41&ei=11"
+}, shortCode=eka178, updatedAt=null}
+2025-09-01 10:41:09 - Not closing pre-bound JPA EntityManager after transaction
+2025-09-01 10:41:09 - URL {
+url:"https://www.msn.com/ar-eg/sports/other/%D9%85%D9%84%D9%81-%D9%8A%D9%84%D8%A7-%D9%83%D9%88%D8%B1%D8%A9-%D8%B1%D8%AD%D9%8A%D9%84-%D8%B1%D9%8A%D8%A8%D9%8A%D8%B1%D9%88-%D9%87%D8%B2%D9%8A%D9%85%D8%A9-%D8%A7%D9%84%D8%B2%D9%85%D8%A7%D9%84%D9%83-%D9%88%D9%82%D8%A7%D8%A6%D9%85%D8%A9-%D9%85%D9%86%D8%AA%D8%AE%D8%A8-%D9%85%D8%B5%D8%B1/ar-AA1LBf8b?ocid=msedgntp&pc=U531&cvid=0cb54c032adf4afb8117d9aacb88fe41&ei=11"
+} shortened to eka178 
+2025-09-01 10:41:09 - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/yaml]
+2025-09-01 10:41:09 - Writing [URL(ID=1, mainURL={<EOL>url:"https://www.msn.com/ar-eg/sports/other/%D9%85%D9%84%D9%81-%D9%8A%D9%84%D8%A (truncated)...]
+2025-09-01 10:41:09 - Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+2025-09-01 10:41:09 - Completed 200 OK
+2025-09-01 10:41:18 - HikariPool-1 - Pool stats (total=10/10, idle=10/10, active=0, waiting=0)
+2025-09-01 10:41:18 - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-09-01 10:41:23 - HikariPool-1 - keepalive: connection com.mysql.cj.jdbc.ConnectionImpl@5586c090 is alive
+2025-09-01 10:41:28 - HikariPool-1 - keepalive: connection com.mysql.cj.jdbc.ConnectionImpl@435b4960 is alive
+2025-09-01 10:41:32 - HikariPool-1 - keepalive: connection com.mysql.cj.jdbc.ConnectionImpl@70daadd1 is alive
+2025-09-01 10:41:34 - HikariPool-1 - keepalive: connection com.mysql.cj.jdbc.ConnectionImpl@749435e4 is alive
+2025-09-01 10:41:35 - HikariPool-1 - keepalive: connection com.mysql.cj.jdbc.ConnectionImpl@14bbcaab is alive
+2025-09-01 10:41:41 - HikariPool-1 - keepalive: connection com.mysql.cj.jdbc.ConnectionImpl@281ae8c8 is alive
+2025-09-01 10:41:44 - HikariPool-1 - keepalive: connection com.mysql.cj.jdbc.ConnectionImpl@6a6168ce is alive
+2025-09-01 10:41:44 - HikariPool-1 - keepalive: connection com.mysql.cj.jdbc.ConnectionImpl@25e51ac1 is alive
+2025-09-01 10:41:46 - HikariPool-1 - keepalive: connection com.mysql.cj.jdbc.ConnectionImpl@5df9d06a is alive
+2025-09-01 10:41:48 - HikariPool-1 - Pool stats (total=10/10, idle=10/10, active=0, waiting=0)
+2025-09-01 10:41:48 - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
