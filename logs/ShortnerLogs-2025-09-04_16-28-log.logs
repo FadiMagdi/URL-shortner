@@ -1,0 +1,91 @@
+2025-09-04 16:28:21 - HikariPool-1 - Pool stats (total=10/10, idle=10/10, active=0, waiting=0)
+2025-09-04 16:28:21 - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-09-04 16:28:23 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-09-04 16:28:23 - Initializing Servlet 'dispatcherServlet'
+2025-09-04 16:28:23 - Detected StandardServletMultipartResolver
+2025-09-04 16:28:23 - Detected AcceptHeaderLocaleResolver
+2025-09-04 16:28:23 - Detected FixedThemeResolver
+2025-09-04 16:28:23 - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@107aa4eb
+2025-09-04 16:28:23 - Detected org.springframework.web.servlet.support.SessionFlashMapManager@4351a97a
+2025-09-04 16:28:23 - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-09-04 16:28:23 - Completed initialization in 6 ms
+2025-09-04 16:28:23 - GET "/swagger-ui/swagger-ui-bundle.js", parameters={}
+2025-09-04 16:28:23 - GET "/swagger-ui/swagger-ui-standalone-preset.js", parameters={}
+2025-09-04 16:28:23 - GET "/swagger-ui/swagger-initializer.js", parameters={}
+2025-09-04 16:28:23 - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2025-09-04 16:28:23 - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2025-09-04 16:28:23 - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2025-09-04 16:28:23 - Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+2025-09-04 16:28:23 - Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+2025-09-04 16:28:23 - Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+2025-09-04 16:28:23 - Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+2025-09-04 16:28:23 - Completed 200 OK
+2025-09-04 16:28:23 - Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+2025-09-04 16:28:23 - Completed 200 OK
+2025-09-04 16:28:23 - Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+2025-09-04 16:28:23 - Completed 200 OK
+2025-09-04 16:28:23 - GET "/v3/api-docs/swagger-config", parameters={}
+2025-09-04 16:28:23 - Mapped to org.springdoc.webmvc.ui.SwaggerConfigResource#openapiJson(HttpServletRequest)
+2025-09-04 16:28:23 - Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+2025-09-04 16:28:23 - Using 'application/json', given [*/*] and supported [application/json]
+2025-09-04 16:28:23 - Writing [{configUrl=/v3/api-docs/swagger-config, oauth2RedirectUrl=http://localhost:8080/swagger-ui/oauth2-re (truncated)...]
+2025-09-04 16:28:23 - Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+2025-09-04 16:28:23 - Completed 200 OK
+2025-09-04 16:28:24 - GET "/v3/api-docs", parameters={}
+2025-09-04 16:28:24 - Mapped to org.springdoc.webmvc.api.OpenApiWebMvcResource#openapiJson(HttpServletRequest, String, Locale)
+2025-09-04 16:28:24 - Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+2025-09-04 16:28:24 - resolve class java.lang.String
+2025-09-04 16:28:24 - resolve class java.lang.String
+2025-09-04 16:28:24 - resolve org.springframework.http.ResponseEntity<?>
+2025-09-04 16:28:24 - resolve class java.lang.String
+2025-09-04 16:28:24 - resolve org.springframework.http.ResponseEntity<?>
+2025-09-04 16:28:24 - resolve class java.lang.String
+2025-09-04 16:28:24 - resolve org.springframework.http.ResponseEntity<?>
+2025-09-04 16:28:24 - resolve class java.lang.String
+2025-09-04 16:28:24 - resolve org.springframework.http.ResponseEntity<java.lang.Integer>
+2025-09-04 16:28:24 - resolve [simple type, class java.lang.Integer]
+2025-09-04 16:28:24 - resolve class java.lang.String
+2025-09-04 16:28:24 - resolve org.springframework.http.ResponseEntity<?>
+2025-09-04 16:28:24 - Init duration for springdoc-openapi is: 440 ms
+2025-09-04 16:28:24 - Using 'application/json', given [application/json, */*] and supported [application/json]
+2025-09-04 16:28:24 - Writing [{123, 34, 111, 112, 101, 110, 97, 112, 105, 34, 58, 34, 51, 46, 49, 46, 48, 34, 44, 34, 105, 110, 10 (truncated)...]
+2025-09-04 16:28:24 - Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+2025-09-04 16:28:24 - Completed 200 OK
+2025-09-04 16:28:51 - HikariPool-1 - Pool stats (total=10/10, idle=10/10, active=0, waiting=0)
+2025-09-04 16:28:51 - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-09-04 16:28:56 - POST "/shorten", parameters={}
+2025-09-04 16:28:56 - Mapped to com.FadiMagdi.URL_Shortner.URLController#getShortLink(String)
+2025-09-04 16:28:56 - Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+2025-09-04 16:28:56 - Read "application/json;charset=UTF-8" to ["{<EOL>url:"https://www.msn.com/ar-eg/news/featured/%D8%A3%D9%88%D9%84-%D8%AA%D8%B9%D9%84%D9%8A%D9%82-%D9 (truncated)..."]
+2025-09-04 16:28:56 - URL {
+url:"https://www.msn.com/ar-eg/news/featured/%D8%A3%D9%88%D9%84-%D8%AA%D8%B9%D9%84%D9%8A%D9%82-%D9%85%D9%86-%D8%A5%D8%B3%D8%B1%D8%A7%D8%A6%D9%8A%D9%84-%D8%B9%D9%84%D9%89-%D8%A5%D8%B9%D9%84%D8%A7%D9%86-%D8%AD%D9%85%D8%A7%D8%B3-%D8%A8%D8%A7%D9%84%D9%85%D9%88%D8%A7%D9%81%D9%82%D8%A9-%D8%B9%D9%84%D9%89-%D8%B5%D9%81%D9%82%D8%A9-%D8%B4%D8%A7%D9%85%D9%84%D8%A9-%D8%A8%D8%BA%D8%B2%D8%A9/ar-AA1LPjQR?ocid=msedgntp&pc=U531&cvid=68b98baab93f4b25b36d302892b38141&ei=49"
+} was shortened with short Code rkx844
+2025-09-04 16:28:56 - Found thread-bound EntityManager [SessionImpl(874715841<open>)] for JPA transaction
+2025-09-04 16:28:56 - Creating new transaction with name [org.springframework.data.jpa.repository.support.SimpleJpaRepository.save]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
+2025-09-04 16:28:56 - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+2025-09-04 16:28:56 - begin
+2025-09-04 16:28:56 - Exposing JPA transaction as JDBC [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@47e73620]
+2025-09-04 16:28:56 - jakarta.persistence.PersistenceUnitUtil.getIdentifier is only intended to work with enhanced entities (although Hibernate also adapts this support to its proxies); however the passed entity was not enhanced (nor a proxy).. may not be able to read identifier
+2025-09-04 16:28:56 - Executing identity-insert immediately
+2025-09-04 16:28:56 - insert into url (access_count,created_at,mainurl,short_code,updated_at) values (?,?,?,?,?)
+2025-09-04 16:28:56 - Initializer list is empty
+2025-09-04 16:28:56 - Extracted generated values [com.FadiMagdi.URL_Shortner.Domain.URL]: [Ljava.lang.Object;@734df7fb
+2025-09-04 16:28:56 - Initiating transaction commit
+2025-09-04 16:28:56 - Committing JPA transaction on EntityManager [SessionImpl(874715841<open>)]
+2025-09-04 16:28:56 - committing
+2025-09-04 16:28:56 - Processing flush-time cascades
+2025-09-04 16:28:56 - Dirty checking collections
+2025-09-04 16:28:56 - Flushed: 0 insertions, 0 updates, 0 deletions to 1 objects
+2025-09-04 16:28:56 - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+2025-09-04 16:28:56 - Listing entities:
+2025-09-04 16:28:56 - com.FadiMagdi.URL_Shortner.Domain.URL{accessCount=0, createdAt=Thu Sep 04 16:28:56 EEST 2025, ID=3, mainURL={
+url:"https://www.msn.com/ar-eg/news/featured/%D8%A3%D9%88%D9%84-%D8%AA%D8%B9%D9%84%D9%8A%D9%82-%D9%85%D9%86-%D8%A5%D8%B3%D8%B1%D8%A7%D8%A6%D9%8A%D9%84-%D8%B9%D9%84%D9%89-%D8%A5%D8%B9%D9%84%D8%A7%D9%86-%D8%AD%D9%85%D8%A7%D8%B3-%D8%A8%D8%A7%D9%84%D9%85%D9%88%D8%A7%D9%81%D9%82%D8%A9-%D8%B9%D9%84%D9%89-%D8%B5%D9%81%D9%82%D8%A9-%D8%B4%D8%A7%D9%85%D9%84%D8%A9-%D8%A8%D8%BA%D8%B2%D8%A9/ar-AA1LPjQR?ocid=msedgntp&pc=U531&cvid=68b98baab93f4b25b36d302892b38141&ei=49"
+}, shortCode=rkx844, updatedAt=null}
+2025-09-04 16:28:56 - Not closing pre-bound JPA EntityManager after transaction
+2025-09-04 16:28:56 - URL {
+url:"https://www.msn.com/ar-eg/news/featured/%D8%A3%D9%88%D9%84-%D8%AA%D8%B9%D9%84%D9%8A%D9%82-%D9%85%D9%86-%D8%A5%D8%B3%D8%B1%D8%A7%D8%A6%D9%8A%D9%84-%D8%B9%D9%84%D9%89-%D8%A5%D8%B9%D9%84%D8%A7%D9%86-%D8%AD%D9%85%D8%A7%D8%B3-%D8%A8%D8%A7%D9%84%D9%85%D9%88%D8%A7%D9%81%D9%82%D8%A9-%D8%B9%D9%84%D9%89-%D8%B5%D9%81%D9%82%D8%A9-%D8%B4%D8%A7%D9%85%D9%84%D8%A9-%D8%A8%D8%BA%D8%B2%D8%A9/ar-AA1LPjQR?ocid=msedgntp&pc=U531&cvid=68b98baab93f4b25b36d302892b38141&ei=49"
+} shortened to rkx844 
+2025-09-04 16:28:56 - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/yaml]
+2025-09-04 16:28:56 - Writing [URL(ID=3, mainURL={<EOL>url:"https://www.msn.com/ar-eg/news/featured/%D8%A3%D9%88%D9%84-%D8%AA%D8%B9%D9% (truncated)...]
+2025-09-04 16:28:56 - Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+2025-09-04 16:28:56 - Completed 200 OK
