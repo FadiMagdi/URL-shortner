@@ -2,6 +2,7 @@ package com.FadiMagdi.URL_Shortner;
 
 import com.FadiMagdi.URL_Shortner.Domain.URL;
 import com.FadiMagdi.URL_Shortner.Repositories.UrlRepository;
+import jakarta.persistence.EntityNotFoundException;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
@@ -52,7 +53,7 @@ public class UrlService {
         Optional<URL> found = this.urlRepository.findByShortCode(shortCode);
 
 
-        URL actualURL = found.orElseThrow(()-> new IllegalArgumentException("shortCode not found")); // incrementing number of visits
+        URL actualURL = found.orElseThrow(()-> new EntityNotFoundException("shortCode not found")); // incrementing number of visits
 log.error("Short code {} does not exist in DB",shortCode);
         actualURL.setAccessCount(actualURL.getAccessCount()+1);
 
@@ -61,8 +62,10 @@ this.urlRepository.save(actualURL);
     }
 
     URL updateURL(String shortCode,String newURL){
-        Optional<URL> found= this.urlRepository.findByShortCode(shortCode);
-        URL actualURL = found.orElseThrow(()-> new IllegalArgumentException("shortCode not found"));
+       Optional<URL> found= this.urlRepository.findByShortCode(shortCode);
+       URL actualURL = found.orElseThrow(()-> new EntityNotFoundException("shortCode not found"));
+
+
 
         actualURL.setMainURL(newURL);
         actualURL.setUpdatedAt(new Date());
@@ -74,7 +77,7 @@ this.urlRepository.save(actualURL);
     void deleteURL(String shortCode){
         Optional<URL> search = this.urlRepository.findByShortCode(shortCode);
 
-        URL todelete = search.orElseThrow(()-> new IllegalArgumentException("shortCode not found"));
+        URL todelete = search.orElseThrow(()-> new EntityNotFoundException("shortCode not found"));
         this.urlRepository.delete(todelete);
 
         log.info("URL with {} has been deleted",shortCode);
@@ -84,7 +87,7 @@ this.urlRepository.save(actualURL);
 
         Optional<URL> url = this.urlRepository.findByShortCode(shortCode);
 
-        URL stats = url.orElseThrow(()-> new IllegalArgumentException("short code is not found"));
+        URL stats = url.orElseThrow(()-> new EntityNotFoundException("short code is not found"));
  log.info("URL with {} has {} visits",shortCode,stats.getAccessCount());
         return stats.getAccessCount();
     }

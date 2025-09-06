@@ -2,6 +2,7 @@ package com.FadiMagdi.URL_Shortner;
 
 import com.FadiMagdi.URL_Shortner.Domain.URL;
 import com.FadiMagdi.URL_Shortner.Repositories.UrlRepository;
+import jakarta.persistence.EntityNotFoundException;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -90,7 +91,7 @@ when(this.urlRepository.save(any(URL.class))).thenReturn(mockURL);
 
     @Test
     @DisplayName("check throwing IllegalArgumentException")
-    void shouldThrowsIllegalArgumentException(){
+    void shouldThrowEntityNotFoundException(){
     //Given
         //using a fake shortCode
 
@@ -104,15 +105,15 @@ when(this.urlRepository.save(any(URL.class))).thenReturn(mockURL);
 
         URL fakeURL = new URL(this.urlService.generateShortCode(),unseenURL,new Date());
 
-        final IllegalArgumentException IAE = assertThrows(
-                IllegalArgumentException.class,
+        final EntityNotFoundException IAE = assertThrows(
+                EntityNotFoundException.class,
                 ()-> this.urlService.getURLByShortCode(fakeShortCode)
 
         );
 
         assertEquals("shortCode not found",IAE.getMessage());
 
-        verify(this.urlRepository,times(0)).save(fakeURL); //to check the access count was  not updated in any entity
+        verify(this.urlRepository,never()).save(fakeURL); //to check the access count was  not updated in any entity
     }
 
 }

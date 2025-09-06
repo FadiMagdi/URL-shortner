@@ -1,0 +1,32 @@
+2025-09-04 16:29:16 - Application availability state ReadinessState changed from ACCEPTING_TRAFFIC to REFUSING_TRAFFIC
+2025-09-04 16:29:16 - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@46ad32de, started on Thu Sep 04 16:27:43 EEST 2025
+2025-09-04 16:29:16 - Stopping beans in phase 2147482623
+2025-09-04 16:29:16 - Commencing graceful shutdown. Waiting for active requests to complete
+2025-09-04 16:29:16 - Graceful shutdown complete
+2025-09-04 16:29:16 - Stopping beans in phase 2147481599
+2025-09-04 16:29:16 - Bean 'webServerGracefulShutdown' completed its stop procedure
+2025-09-04 16:29:16 - Bean 'webServerStartStop' completed its stop procedure
+2025-09-04 16:29:16 - Stopping beans in phase 1073741823
+2025-09-04 16:29:16 - Bean 'applicationTaskExecutor' completed its stop procedure
+2025-09-04 16:29:16 - Stopping beans in phase -2147483647
+2025-09-04 16:29:16 - Bean 'springBootLoggingLifecycle' completed its stop procedure
+2025-09-04 16:29:16 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-09-04 16:29:16 - HHH000031: Closing
+2025-09-04 16:29:16 - Un-scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration$Scope@2d7f8a20] from SessionFactory [org.hibernate.internal.SessionFactoryImpl@48626e7f]
+2025-09-04 16:29:16 - Implicitly destroying ServiceRegistry on de-registration of all child ServiceRegistries
+2025-09-04 16:29:16 - Implicitly destroying Boot-strap registry on de-registration of all child ServiceRegistries
+2025-09-04 16:29:16 - HikariPool-1 - Shutdown initiated...
+2025-09-04 16:29:16 - HikariPool-1 - Before shutdown stats (total=10/10, idle=10/10, active=0, waiting=0)
+2025-09-04 16:29:16 - HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@2c0b2f63: (connection evicted)
+2025-09-04 16:29:16 - HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@1bf9b84e: (connection evicted)
+2025-09-04 16:29:16 - HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@5ac4b275: (connection evicted)
+2025-09-04 16:29:16 - HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@6b54cb19: (connection evicted)
+2025-09-04 16:29:16 - HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@3aeb4d3a: (connection evicted)
+2025-09-04 16:29:16 - HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@3ea51360: (connection evicted)
+2025-09-04 16:29:16 - HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@7b177c17: (connection evicted)
+2025-09-04 16:29:16 - HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@ba6ddc7: (connection evicted)
+2025-09-04 16:29:16 - HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@50f30f12: (connection evicted)
+2025-09-04 16:29:16 - HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@77ae231: (connection evicted)
+2025-09-04 16:29:16 - HikariPool-1 - After  shutdown stats (total=0/10, idle=0/10, active=0, waiting=0)
+2025-09-04 16:29:16 - HikariPool-1 - Shutdown completed.
+2025-09-04 16:29:16 - Shutting down ExecutorService 'applicationTaskExecutor'
