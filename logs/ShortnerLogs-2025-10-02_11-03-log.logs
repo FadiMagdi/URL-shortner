@@ -1,0 +1,45 @@
+2025-10-02 11:03:04 - HikariPool-1 - keepalive: connection com.mysql.cj.jdbc.ConnectionImpl@6ea101e1 is alive
+2025-10-02 11:03:06 - HikariPool-1 - keepalive: connection com.mysql.cj.jdbc.ConnectionImpl@2c591c89 is alive
+2025-10-02 11:03:22 - HikariPool-1 - Pool stats (total=10/10, idle=10/10, active=0, waiting=0)
+2025-10-02 11:03:22 - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-10-02 11:03:24 - GET "/shorten/grs030/stats", parameters={}
+2025-10-02 11:03:24 - Mapped to com.FadiMagdi.URL_Shortner.URLController#shpwStats(String)
+2025-10-02 11:03:24 - Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+2025-10-02 11:03:24 - Created new SQL alias : u1_0
+2025-10-02 11:03:24 - Registration of TableGroup [StandardTableGroup(com.FadiMagdi.URL_Shortner.Domain.URL(2))] with identifierForTableGroup [com.FadiMagdi.URL_Shortner.Domain.URL] for NavigablePath [com.FadiMagdi.URL_Shortner.Domain.URL] 
+2025-10-02 11:03:24 - Determining mapping-model type for SqmParameter : org.hibernate.query.sqm.tree.expression.SqmJpaCriteriaParameterWrapper@cbd4ecd
+2025-10-02 11:03:24 - Determining mapping-model type for SqmPath : SqmBasicValuedSimplePath(com.FadiMagdi.URL_Shortner.Domain.URL(2).shortCode) 
+2025-10-02 11:03:24 - DomainResult Graph:
+ \-EntityResultImpl [com.FadiMagdi.URL_Shortner.Domain.URL(2)]
+ |  +-BasicFetch [com.FadiMagdi.URL_Shortner.Domain.URL(2).accessCount]
+ |  +-BasicFetch [com.FadiMagdi.URL_Shortner.Domain.URL(2).createdAt]
+ |  +-BasicFetch [com.FadiMagdi.URL_Shortner.Domain.URL(2).mainURL]
+ |  +-BasicFetch [com.FadiMagdi.URL_Shortner.Domain.URL(2).shortCode]
+ |  \-BasicFetch [com.FadiMagdi.URL_Shortner.Domain.URL(2).updatedAt]
+
+2025-10-02 11:03:24 - SQL AST Tree:
+    SelectStatement {
+      FromClause {
+        StandardTableGroup (u1 : com.FadiMagdi.URL_Shortner.Domain.URL(2)) {
+          primaryTableReference : url as u1_0
+        }
+      }
+    }
+
+2025-10-02 11:03:24 - Skipping reading Query result cache data: cache-enabled = false, cache-mode = NORMAL
+2025-10-02 11:03:24 - select u1_0.id,u1_0.access_count,u1_0.created_at,u1_0.mainurl,u1_0.short_code,u1_0.updated_at from url u1_0 where u1_0.short_code=?
+2025-10-02 11:03:24 - Initializer list:
+	  com.FadiMagdi.URL_Shortner.Domain.URL(2) -> EntityJoinedFetchInitializer(com.FadiMagdi.URL_Shortner.Domain.URL(2))@175449121 (SingleTableEntityPersister(com.FadiMagdi.URL_Shortner.Domain.URL))
+
+2025-10-02 11:03:24 - URL with grs030 has 0 visits
+2025-10-02 11:03:24 - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/yaml]
+2025-10-02 11:03:24 - Writing [0]
+2025-10-02 11:03:24 - Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+2025-10-02 11:03:24 - Completed 200 OK
+2025-10-02 11:03:26 - HikariPool-1 - keepalive: connection com.mysql.cj.jdbc.ConnectionImpl@417791eb is alive
+2025-10-02 11:03:36 - HikariPool-1 - keepalive: connection com.mysql.cj.jdbc.ConnectionImpl@147993f0 is alive
+2025-10-02 11:03:42 - HikariPool-1 - keepalive: connection com.mysql.cj.jdbc.ConnectionImpl@5276b9bb is alive
+2025-10-02 11:03:49 - HikariPool-1 - keepalive: connection com.mysql.cj.jdbc.ConnectionImpl@4539286b is alive
+2025-10-02 11:03:52 - HikariPool-1 - Pool stats (total=10/10, idle=10/10, active=0, waiting=0)
+2025-10-02 11:03:52 - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-10-02 11:03:56 - HikariPool-1 - keepalive: connection com.mysql.cj.jdbc.ConnectionImpl@78ae7d74 is alive

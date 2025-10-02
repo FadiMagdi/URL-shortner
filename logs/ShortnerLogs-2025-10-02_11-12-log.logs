@@ -1,0 +1,42 @@
+2025-10-02 11:12:04 - HikariPool-1 - keepalive: connection com.mysql.cj.jdbc.ConnectionImpl@6ea101e1 is alive
+2025-10-02 11:12:06 - HikariPool-1 - keepalive: connection com.mysql.cj.jdbc.ConnectionImpl@2c591c89 is alive
+2025-10-02 11:12:23 - HikariPool-1 - Pool stats (total=10/10, idle=10/10, active=0, waiting=0)
+2025-10-02 11:12:23 - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-10-02 11:12:39 - HikariPool-1 - keepalive: connection com.mysql.cj.jdbc.ConnectionImpl@642bdd1f is alive
+2025-10-02 11:12:44 - HikariPool-1 - keepalive: connection com.mysql.cj.jdbc.ConnectionImpl@1c992b9a is alive
+2025-10-02 11:12:53 - HikariPool-1 - Pool stats (total=10/10, idle=10/10, active=0, waiting=0)
+2025-10-02 11:12:53 - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-10-02 11:12:53 - HikariPool-1 - keepalive: connection com.mysql.cj.jdbc.ConnectionImpl@417791eb is alive
+2025-10-02 11:12:54 - HikariPool-1 - keepalive: connection com.mysql.cj.jdbc.ConnectionImpl@2516d724 is alive
+2025-10-02 11:12:56 - Application availability state ReadinessState changed from ACCEPTING_TRAFFIC to REFUSING_TRAFFIC
+2025-10-02 11:12:56 - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@46ad32de, started on Thu Oct 02 10:55:43 EEST 2025
+2025-10-02 11:12:56 - Stopping beans in phase 2147482623
+2025-10-02 11:12:56 - Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-02 11:12:56 - Graceful shutdown complete
+2025-10-02 11:12:56 - Stopping beans in phase 2147481599
+2025-10-02 11:12:56 - Bean 'webServerGracefulShutdown' completed its stop procedure
+2025-10-02 11:12:56 - Bean 'webServerStartStop' completed its stop procedure
+2025-10-02 11:12:56 - Stopping beans in phase 1073741823
+2025-10-02 11:12:56 - Bean 'applicationTaskExecutor' completed its stop procedure
+2025-10-02 11:12:56 - Stopping beans in phase -2147483647
+2025-10-02 11:12:56 - Bean 'springBootLoggingLifecycle' completed its stop procedure
+2025-10-02 11:12:56 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-10-02 11:12:56 - HHH000031: Closing
+2025-10-02 11:12:56 - Un-scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration$Scope@22a50b0a] from SessionFactory [org.hibernate.internal.SessionFactoryImpl@15372e0d]
+2025-10-02 11:12:56 - Implicitly destroying ServiceRegistry on de-registration of all child ServiceRegistries
+2025-10-02 11:12:56 - Implicitly destroying Boot-strap registry on de-registration of all child ServiceRegistries
+2025-10-02 11:12:56 - HikariPool-1 - Shutdown initiated...
+2025-10-02 11:12:56 - HikariPool-1 - Before shutdown stats (total=10/10, idle=10/10, active=0, waiting=0)
+2025-10-02 11:12:56 - HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@1c992b9a: (connection evicted)
+2025-10-02 11:12:57 - HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@642bdd1f: (connection evicted)
+2025-10-02 11:12:57 - HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@2516d724: (connection evicted)
+2025-10-02 11:12:57 - HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@147993f0: (connection evicted)
+2025-10-02 11:12:57 - HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@4539286b: (connection evicted)
+2025-10-02 11:12:57 - HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@417791eb: (connection evicted)
+2025-10-02 11:12:57 - HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@6ea101e1: (connection evicted)
+2025-10-02 11:12:57 - HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@5276b9bb: (connection evicted)
+2025-10-02 11:12:57 - HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@78ae7d74: (connection evicted)
+2025-10-02 11:12:57 - HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@2c591c89: (connection evicted)
+2025-10-02 11:12:57 - HikariPool-1 - After  shutdown stats (total=0/10, idle=0/10, active=0, waiting=0)
+2025-10-02 11:12:57 - HikariPool-1 - Shutdown completed.
+2025-10-02 11:12:57 - Shutting down ExecutorService 'applicationTaskExecutor'

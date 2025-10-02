@@ -1,0 +1,127 @@
+2025-10-02 11:08:22 - HikariPool-1 - Pool stats (total=10/10, idle=10/10, active=0, waiting=0)
+2025-10-02 11:08:22 - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-10-02 11:08:28 - HikariPool-1 - keepalive: connection com.mysql.cj.jdbc.ConnectionImpl@6ea101e1 is alive
+2025-10-02 11:08:30 - HikariPool-1 - keepalive: connection com.mysql.cj.jdbc.ConnectionImpl@2c591c89 is alive
+2025-10-02 11:08:39 - GET "/shorten/grs030", parameters={}
+2025-10-02 11:08:39 - Mapped to com.FadiMagdi.URL_Shortner.URLController#RedirectOriginalUrl(String)
+2025-10-02 11:08:39 - Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+2025-10-02 11:08:39 - Created new SQL alias : u1_0
+2025-10-02 11:08:39 - Registration of TableGroup [StandardTableGroup(com.FadiMagdi.URL_Shortner.Domain.URL(2))] with identifierForTableGroup [com.FadiMagdi.URL_Shortner.Domain.URL] for NavigablePath [com.FadiMagdi.URL_Shortner.Domain.URL] 
+2025-10-02 11:08:39 - Determining mapping-model type for SqmParameter : org.hibernate.query.sqm.tree.expression.SqmJpaCriteriaParameterWrapper@36542784
+2025-10-02 11:08:39 - Determining mapping-model type for SqmPath : SqmBasicValuedSimplePath(com.FadiMagdi.URL_Shortner.Domain.URL(2).shortCode) 
+2025-10-02 11:08:39 - DomainResult Graph:
+ \-EntityResultImpl [com.FadiMagdi.URL_Shortner.Domain.URL(2)]
+ |  +-BasicFetch [com.FadiMagdi.URL_Shortner.Domain.URL(2).accessCount]
+ |  +-BasicFetch [com.FadiMagdi.URL_Shortner.Domain.URL(2).createdAt]
+ |  +-BasicFetch [com.FadiMagdi.URL_Shortner.Domain.URL(2).mainURL]
+ |  +-BasicFetch [com.FadiMagdi.URL_Shortner.Domain.URL(2).shortCode]
+ |  \-BasicFetch [com.FadiMagdi.URL_Shortner.Domain.URL(2).updatedAt]
+
+2025-10-02 11:08:39 - SQL AST Tree:
+    SelectStatement {
+      FromClause {
+        StandardTableGroup (u1 : com.FadiMagdi.URL_Shortner.Domain.URL(2)) {
+          primaryTableReference : url as u1_0
+        }
+      }
+    }
+
+2025-10-02 11:08:39 - Skipping reading Query result cache data: cache-enabled = false, cache-mode = NORMAL
+2025-10-02 11:08:39 - select u1_0.id,u1_0.access_count,u1_0.created_at,u1_0.mainurl,u1_0.short_code,u1_0.updated_at from url u1_0 where u1_0.short_code=?
+2025-10-02 11:08:39 - Initializer list:
+	  com.FadiMagdi.URL_Shortner.Domain.URL(2) -> EntityJoinedFetchInitializer(com.FadiMagdi.URL_Shortner.Domain.URL(2))@1218280808 (SingleTableEntityPersister(com.FadiMagdi.URL_Shortner.Domain.URL))
+
+2025-10-02 11:08:39 - Short code grs030 does not exist in DB
+2025-10-02 11:08:39 - Found thread-bound EntityManager [SessionImpl(2057234676<open>)] for JPA transaction
+2025-10-02 11:08:39 - Creating new transaction with name [org.springframework.data.jpa.repository.support.SimpleJpaRepository.save]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
+2025-10-02 11:08:39 - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+2025-10-02 11:08:39 - begin
+2025-10-02 11:08:39 - Exposing JPA transaction as JDBC [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@59cbacf2]
+2025-10-02 11:08:39 - jakarta.persistence.PersistenceUnitUtil.getIdentifier is only intended to work with enhanced entities (although Hibernate also adapts this support to its proxies); however the passed entity was not enhanced (nor a proxy).. may not be able to read identifier
+2025-10-02 11:08:39 - Initiating transaction commit
+2025-10-02 11:08:39 - Committing JPA transaction on EntityManager [SessionImpl(2057234676<open>)]
+2025-10-02 11:08:39 - committing
+2025-10-02 11:08:39 - Processing flush-time cascades
+2025-10-02 11:08:39 - Dirty checking collections
+2025-10-02 11:08:39 - Flushed: 0 insertions, 1 updates, 0 deletions to 1 objects
+2025-10-02 11:08:39 - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+2025-10-02 11:08:39 - Listing entities:
+2025-10-02 11:08:39 - com.FadiMagdi.URL_Shortner.Domain.URL{accessCount=2, createdAt=2025-10-02 11:02:52.733, ID=4, mainURL={
+"url":"https://www.youtube.com/shorts/1IoLTzbZ3i4"
+}, shortCode=grs030, updatedAt=null}
+2025-10-02 11:08:39 - update url set access_count=?,created_at=?,mainurl=?,short_code=?,updated_at=? where id=?
+2025-10-02 11:08:39 - Not closing pre-bound JPA EntityManager after transaction
+2025-10-02 11:08:39 - Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+2025-10-02 11:08:39 - Failed to complete request: java.lang.IllegalArgumentException: Illegal character in scheme name at index 0: {
+"url":"https://www.youtube.com/shorts/1IoLTzbZ3i4"
+}
+2025-10-02 11:08:39 - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.IllegalArgumentException: Illegal character in scheme name at index 0: {
+"url":"https://www.youtube.com/shorts/1IoLTzbZ3i4"
+}] with root cause
+java.net.URISyntaxException: Illegal character in scheme name at index 0: {
+"url":"https://www.youtube.com/shorts/1IoLTzbZ3i4"
+}
+	at java.base/java.net.URI$Parser.fail(URI.java:2995)
+	at java.base/java.net.URI$Parser.checkChars(URI.java:3166)
+	at java.base/java.net.URI$Parser.checkChar(URI.java:3176)
+	at java.base/java.net.URI$Parser.parse(URI.java:3191)
+	at java.base/java.net.URI.<init>(URI.java:645)
+	at java.base/java.net.URI.create(URI.java:930)
+	at com.FadiMagdi.URL_Shortner.URLController.RedirectOriginalUrl(URLController.java:38)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:191)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:991)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:896)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1769)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1189)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:658)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+2025-10-02 11:08:39 - "ERROR" dispatch for GET "/error", parameters={}
+2025-10-02 11:08:39 - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
+2025-10-02 11:08:39 - Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+2025-10-02 11:08:39 - Selected 'text/html' given [text/html, text/html;q=0.8]
+2025-10-02 11:08:39 - Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+2025-10-02 11:08:39 - Exiting from "ERROR" dispatch, status 500
+2025-10-02 11:08:45 - HikariPool-1 - keepalive: connection com.mysql.cj.jdbc.ConnectionImpl@78ae7d74 is alive
+2025-10-02 11:08:52 - HikariPool-1 - Pool stats (total=10/10, idle=10/10, active=0, waiting=0)
+2025-10-02 11:08:52 - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.

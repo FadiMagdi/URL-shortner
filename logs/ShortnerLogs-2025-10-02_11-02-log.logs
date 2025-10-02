@@ -1,0 +1,44 @@
+2025-10-02 11:02:19 - HikariPool-1 - keepalive: connection com.mysql.cj.jdbc.ConnectionImpl@78ae7d74 is alive
+2025-10-02 11:02:22 - HikariPool-1 - Pool stats (total=10/10, idle=10/10, active=0, waiting=0)
+2025-10-02 11:02:22 - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-10-02 11:02:35 - HikariPool-1 - keepalive: connection com.mysql.cj.jdbc.ConnectionImpl@642bdd1f is alive
+2025-10-02 11:02:37 - HikariPool-1 - keepalive: connection com.mysql.cj.jdbc.ConnectionImpl@1c992b9a is alive
+2025-10-02 11:02:41 - HikariPool-1 - keepalive: connection com.mysql.cj.jdbc.ConnectionImpl@2516d724 is alive
+2025-10-02 11:02:52 - POST "/shorten", parameters={}
+2025-10-02 11:02:52 - Mapped to com.FadiMagdi.URL_Shortner.URLController#getShortLink(String)
+2025-10-02 11:02:52 - Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+2025-10-02 11:02:52 - Read "application/json;charset=UTF-8" to ["{<EOL>"url":"https://www.youtube.com/shorts/1IoLTzbZ3i4"<EOL>}"]
+2025-10-02 11:02:52 - URL {
+"url":"https://www.youtube.com/shorts/1IoLTzbZ3i4"
+} was shortened with short Code grs030
+2025-10-02 11:02:52 - Found thread-bound EntityManager [SessionImpl(1769952794<open>)] for JPA transaction
+2025-10-02 11:02:52 - Creating new transaction with name [org.springframework.data.jpa.repository.support.SimpleJpaRepository.save]: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
+2025-10-02 11:02:52 - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+2025-10-02 11:02:52 - begin
+2025-10-02 11:02:52 - Exposing JPA transaction as JDBC [org.springframework.orm.jpa.vendor.HibernateJpaDialect$HibernateConnectionHandle@1d4b054a]
+2025-10-02 11:02:52 - jakarta.persistence.PersistenceUnitUtil.getIdentifier is only intended to work with enhanced entities (although Hibernate also adapts this support to its proxies); however the passed entity was not enhanced (nor a proxy).. may not be able to read identifier
+2025-10-02 11:02:52 - Executing identity-insert immediately
+2025-10-02 11:02:52 - insert into url (access_count,created_at,mainurl,short_code,updated_at) values (?,?,?,?,?)
+2025-10-02 11:02:52 - HikariPool-1 - Pool stats (total=10/10, idle=9/10, active=1, waiting=0)
+2025-10-02 11:02:52 - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-10-02 11:02:53 - Initializer list is empty
+2025-10-02 11:02:53 - Extracted generated values [com.FadiMagdi.URL_Shortner.Domain.URL]: [Ljava.lang.Object;@36177023
+2025-10-02 11:02:53 - Initiating transaction commit
+2025-10-02 11:02:53 - Committing JPA transaction on EntityManager [SessionImpl(1769952794<open>)]
+2025-10-02 11:02:53 - committing
+2025-10-02 11:02:53 - Processing flush-time cascades
+2025-10-02 11:02:53 - Dirty checking collections
+2025-10-02 11:02:53 - Flushed: 0 insertions, 0 updates, 0 deletions to 1 objects
+2025-10-02 11:02:53 - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+2025-10-02 11:02:53 - Listing entities:
+2025-10-02 11:02:53 - com.FadiMagdi.URL_Shortner.Domain.URL{accessCount=0, createdAt=Thu Oct 02 11:02:52 EEST 2025, ID=4, mainURL={
+"url":"https://www.youtube.com/shorts/1IoLTzbZ3i4"
+}, shortCode=grs030, updatedAt=null}
+2025-10-02 11:02:53 - Not closing pre-bound JPA EntityManager after transaction
+2025-10-02 11:02:53 - URL {
+"url":"https://www.youtube.com/shorts/1IoLTzbZ3i4"
+} shortened to grs030 
+2025-10-02 11:02:53 - Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/yaml]
+2025-10-02 11:02:53 - Writing [URL(ID=4, mainURL={<EOL>"url":"https://www.youtube.com/shorts/1IoLTzbZ3i4"<EOL>}, shortCode=grs030, createdA (truncated)...]
+2025-10-02 11:02:53 - Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+2025-10-02 11:02:53 - Completed 200 OK

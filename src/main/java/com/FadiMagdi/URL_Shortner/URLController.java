@@ -3,8 +3,12 @@ package com.FadiMagdi.URL_Shortner;
 import com.FadiMagdi.URL_Shortner.Domain.URL;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.HttpStatusCode;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+
+import java.net.URI;
 
 @RestController
 @RequiredArgsConstructor
@@ -26,10 +30,12 @@ return ResponseEntity.ok(response);
     }
 
     @GetMapping("/{shortCode}")
-public ResponseEntity<?> getOriginalUrl(@PathVariable("shortCode") String shortCode){
+public ResponseEntity<Void> RedirectOriginalUrl(@PathVariable("shortCode") String shortCode){
 
         String OriginalUrl = this.urlService.getURLByShortCode(shortCode);
-        return ResponseEntity.ok(OriginalUrl);
+
+        return ResponseEntity.status(HttpStatus.MOVED_PERMANENTLY).
+                location(URI.create(OriginalUrl)).build();
     }
 
     @PutMapping("/{shortCode}")
