@@ -22165,3 +22165,144 @@ Unconditional classes:
 2025-10-02 11:43:49 - HikariPool-1 - After  shutdown stats (total=0/10, idle=0/10, active=0, waiting=0)
 2025-10-02 11:43:49 - HikariPool-1 - Shutdown completed.
 2025-10-02 11:43:49 - Shutting down ExecutorService 'applicationTaskExecutor'
+2025-10-02 11:54:30 - HV000001: Hibernate Validator 8.0.2.Final
+2025-10-02 11:54:30 - Starting UrlShortnerApplication using Java 23.0.2 with PID 19808 (C:\Users\Fadi\Documents\Courses\Java\springboot projects\url-shortner\URL-Shortner\target\classes started by Fadi in C:\Users\Fadi\Documents\Courses\Java\springboot projects\url-shortner\URL-Shortner)
+2025-10-02 11:54:30 - No active profile set, falling back to 1 default profile: "default"
+2025-10-02 11:54:30 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-10-02 11:54:30 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-10-02 11:54:33 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-10-02 11:54:33 - Finished Spring Data repository scanning in 95 ms. Found 1 JPA repository interface.
+2025-10-02 11:54:34 - Tomcat initialized with port 8080 (http)
+2025-10-02 11:54:34 - Initializing ProtocolHandler ["http-nio-8080"]
+2025-10-02 11:54:34 - Starting service [Tomcat]
+2025-10-02 11:54:34 - Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-10-02 11:54:34 - Initializing Spring embedded WebApplicationContext
+2025-10-02 11:54:34 - Root WebApplicationContext: initialization completed in 3619 ms
+2025-10-02 11:54:34 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-10-02 11:54:35 - HHH000412: Hibernate ORM core version 6.6.22.Final
+2025-10-02 11:54:35 - HHH000026: Second-level cache disabled
+2025-10-02 11:54:35 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-10-02 11:54:35 - HikariPool-1 - Starting...
+2025-10-02 11:54:36 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6a821d1b
+2025-10-02 11:54:36 - HikariPool-1 - Start completed.
+2025-10-02 11:54:37 - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.36
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-10-02 11:54:38 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-10-02 11:54:38 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-10-02 11:54:39 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-10-02 11:54:40 - LiveReload server is running on port 35729
+2025-10-02 11:54:40 - Starting ProtocolHandler ["http-nio-8080"]
+2025-10-02 11:54:40 - Tomcat started on port 8080 (http) with context path '/'
+2025-10-02 11:54:40 - Started UrlShortnerApplication in 11.673 seconds (process running for 12.782)
+2025-10-02 11:54:49 - Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-02 11:54:49 - Graceful shutdown complete
+2025-10-02 11:54:49 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-10-02 11:54:49 - HikariPool-1 - Shutdown initiated...
+2025-10-02 11:54:50 - HikariPool-1 - Shutdown completed.
+2025-10-09 13:05:05 - HV000001: Hibernate Validator 8.0.2.Final
+2025-10-09 13:05:05 - Starting UrlShortnerApplicationTests using Java 22.0.1 with PID 5412 (started by Fadi in C:\Users\Fadi\Documents\Courses\Java\springboot projects\url-shortner\URL-Shortner)
+2025-10-09 13:05:05 - No active profile set, falling back to 1 default profile: "default"
+2025-10-09 13:05:08 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-10-09 13:05:09 - Finished Spring Data repository scanning in 166 ms. Found 1 JPA repository interface.
+2025-10-09 13:05:10 - HikariPool-1 - Starting...
+2025-10-09 13:05:11 - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:3d54b0a8-aa19-4b59-a1d0-d73882d24780 user=SA
+2025-10-09 13:05:11 - HikariPool-1 - Start completed.
+2025-10-09 13:05:11 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-10-09 13:05:11 - HHH000412: Hibernate ORM core version 6.6.22.Final
+2025-10-09 13:05:12 - HHH000026: Second-level cache disabled
+2025-10-09 13:05:12 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-10-09 13:05:12 - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-10-09 13:05:15 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-10-09 13:05:15 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-10-09 13:05:17 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-10-09 13:05:18 - Started UrlShortnerApplicationTests in 14.67 seconds (process running for 24.177)
+2025-10-09 13:05:18 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-10-09 13:05:19 - HikariPool-1 - Shutdown initiated...
+2025-10-09 13:05:19 - HikariPool-1 - Shutdown completed.
+2025-10-09 13:30:19 - HV000001: Hibernate Validator 8.0.2.Final
+2025-10-09 13:30:19 - Starting UrlShortnerApplicationTests using Java 22.0.1 with PID 15312 (started by Fadi in C:\Users\Fadi\Documents\Courses\Java\springboot projects\url-shortner\URL-Shortner)
+2025-10-09 13:30:19 - No active profile set, falling back to 1 default profile: "default"
+2025-10-09 13:30:22 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-10-09 13:30:22 - Finished Spring Data repository scanning in 116 ms. Found 1 JPA repository interface.
+2025-10-09 13:30:23 - HikariPool-1 - Starting...
+2025-10-09 13:30:24 - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:82c3b024-7397-448a-a0ba-d6487919a560 user=SA
+2025-10-09 13:30:24 - HikariPool-1 - Start completed.
+2025-10-09 13:30:24 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-10-09 13:30:24 - HHH000412: Hibernate ORM core version 6.6.22.Final
+2025-10-09 13:30:24 - HHH000026: Second-level cache disabled
+2025-10-09 13:30:25 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-10-09 13:30:25 - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-10-09 13:30:27 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-10-09 13:30:27 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-10-09 13:30:28 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-10-09 13:30:30 - Started UrlShortnerApplicationTests in 12.403 seconds (process running for 21.2)
+2025-10-09 13:30:30 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-10-09 13:30:31 - HikariPool-1 - Shutdown initiated...
+2025-10-09 13:30:31 - HikariPool-1 - Shutdown completed.
+2025-10-09 13:55:46 - HV000001: Hibernate Validator 8.0.2.Final
+2025-10-09 13:55:47 - Starting UrlShortnerApplication using Java 23.0.2 with PID 17124 (C:\Users\Fadi\Documents\Courses\Java\springboot projects\url-shortner\URL-Shortner\target\classes started by Fadi in C:\Users\Fadi\Documents\Courses\Java\springboot projects\url-shortner\URL-Shortner)
+2025-10-09 13:55:47 - No active profile set, falling back to 1 default profile: "default"
+2025-10-09 13:55:47 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-10-09 13:55:47 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-10-09 13:55:49 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-10-09 13:55:49 - Finished Spring Data repository scanning in 98 ms. Found 1 JPA repository interface.
+2025-10-09 13:55:50 - Tomcat initialized with port 8080 (http)
+2025-10-09 13:55:50 - Initializing ProtocolHandler ["http-nio-8080"]
+2025-10-09 13:55:50 - Starting service [Tomcat]
+2025-10-09 13:55:50 - Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-10-09 13:55:50 - Initializing Spring embedded WebApplicationContext
+2025-10-09 13:55:50 - Root WebApplicationContext: initialization completed in 3573 ms
+2025-10-09 13:55:51 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-10-09 13:55:51 - HHH000412: Hibernate ORM core version 6.6.22.Final
+2025-10-09 13:55:51 - HHH000026: Second-level cache disabled
+2025-10-09 13:55:52 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-10-09 13:55:52 - HikariPool-1 - Starting...
+2025-10-09 13:55:55 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@757e10b5
+2025-10-09 13:55:55 - HikariPool-1 - Start completed.
+2025-10-09 13:55:55 - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.36
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-10-09 13:55:57 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-10-09 13:55:57 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-10-09 13:55:58 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-10-09 13:55:59 - H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/url-shortner?createDatabaseIfNotExist = true'
+2025-10-09 13:55:59 - LiveReload server is running on port 35729
+2025-10-09 13:55:59 - Starting ProtocolHandler ["http-nio-8080"]
+2025-10-09 13:55:59 - Tomcat started on port 8080 (http) with context path '/'
+2025-10-09 13:55:59 - Started UrlShortnerApplication in 14.058 seconds (process running for 15.347)
+2025-10-09 14:04:40 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-09 14:04:40 - Initializing Servlet 'dispatcherServlet'
+2025-10-09 14:04:40 - Completed initialization in 6 ms
+2025-10-09 14:04:43 - Init duration for springdoc-openapi is: 519 ms
+2025-10-09 14:05:34 - URL https://www.msn.com/ar-eg/news/featured/%D9%8A%D9%8F%D8%B9%D9%8A%D8%AF-%D8%A7%D9%84%D8%A3%D9%85%D9%84-%D9%84%D9%85%D9%84%D8%A7%D9%8A%D9%8A%D9%86-%D8%A7%D9%84%D9%85%D8%B1%D8%B6%D9%89-%D8%B3%D9%83%D8%B1-%D8%B7%D8%A8%D9%8A%D8%B9%D9%8A-%D9%81%D9%8A-%D8%A7%D9%84%D8%AC%D8%B3%D9%85-%D9%82%D8%AF-%D9%8A%D8%B9%D8%A7%D9%84%D8%AC-%D8%A7%D9%84%D8%B5%D9%84%D8%B9-%D8%A7%D9%84%D9%88%D8%B1%D8%A7%D8%AB%D9%8A/ar-AA1IAigC?ocid=msedgntp&pc=U531&cvid=68e7969603a94588b85e0c9faa6deb4e&ei=9 shortened to uku400 
+2025-10-09 14:06:13 - Short code uku400 does not exist in DB
+2025-10-09 14:06:39 - Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-09 14:06:39 - Graceful shutdown complete
+2025-10-09 14:06:39 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-10-09 14:06:39 - HikariPool-1 - Shutdown initiated...
+2025-10-09 14:06:40 - HikariPool-1 - Shutdown completed.

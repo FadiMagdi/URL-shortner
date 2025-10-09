@@ -1,0 +1,4 @@
+2025-10-09 14:04:40 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-09 14:04:40 - Initializing Servlet 'dispatcherServlet'
+2025-10-09 14:04:40 - Completed initialization in 6 ms
+2025-10-09 14:04:43 - Init duration for springdoc-openapi is: 519 ms
